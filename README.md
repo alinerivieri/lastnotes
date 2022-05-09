@@ -29,5 +29,5 @@ This project was based on the design created and made available via Youtube by h
 
 💻 Result:
 
-Veja a aplicação [aqui](https://)
+Veja a aplicação [AQUI](https://lastnotes.vercel.app/)
 ![Preview page GIF](./public/img/preview.gif)
