@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { FaBan, FaCheck } from "react-icons/fa";
 import { useNoteList } from "../../Context/NotelistContext";
 import { useNoteForm } from "../../Context/NoteFormContext";
@@ -13,7 +13,11 @@ export default function NoteForm() {
           description, 
           setDescription, 
           setVisibleForm } =  useNoteForm();
-  const { highlight } = useHighlight();
+  const { highlight, setHighlight } = useHighlight();
+
+  useEffect(()=> {
+    saveLocalNotes()
+  }, [noteList])
 
   function titleHandler(e) {
     setTitle(e.target.value);
@@ -47,7 +51,12 @@ export default function NoteForm() {
 
   function cancelHandler(e) {
     e.preventDefault();
+    setHighlight(false)
     setVisibleForm(false);
+  }
+
+  function saveLocalNotes() {
+    localStorage.setItem("notes", JSON.stringify(noteList))
   }
 
   return (

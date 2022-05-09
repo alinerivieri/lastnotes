@@ -16,7 +16,8 @@
 
     .notes-area .notes {
         justify-content: center;
-        margin: 0;
+        margin: 0 auto;
+        
     }
 
     .notes-area .notes .note {

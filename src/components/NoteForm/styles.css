@@ -3,9 +3,12 @@
     flex-direction: column;
     width: 400px;
     min-width: 400px;
-    height: 95vh;
+    height: 100%;
     padding: 20px;
     background-color: var(--dark-gray);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 20px 20px var(--box-shadow);
+    transition: all 0.3s ease-in-out;
 }
 
 .note-menu div:not(.buttons){
