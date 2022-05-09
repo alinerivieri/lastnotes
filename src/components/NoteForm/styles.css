@@ -1,0 +1,68 @@
+.note-menu {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    min-width: 400px;
+    height: 95vh;
+    padding: 20px;
+    background-color: var(--dark-gray);
+}
+
+.note-menu div:not(.buttons){
+    display: flex;
+    flex-direction: column;
+}
+
+.note-menu div label {
+    font-weight: 300;
+    font-size: 24px;
+    color:  #fff;
+    margin-bottom: 8px;
+}
+
+.note-menu div input {
+    border: 0;
+    height: 40px;
+
+    margin-bottom: 20px;
+    outline: none;
+} 
+
+.note-menu span {
+    color: var(--notes-bg);
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.note-menu div textarea {
+    resize: none;
+    border: 0;
+    outline: none;
+}
+
+.note-menu div textarea,
+.note-menu div input {
+    background-color: var(--notes-bg);
+    font-size: 16px;
+    padding: 5px;
+} 
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.buttons > button {
+    cursor: pointer;
+    padding: 2px;
+    background-color: transparent;
+    border: none;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    color: #fff;
+}
